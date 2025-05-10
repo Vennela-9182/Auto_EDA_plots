@@ -160,3 +160,12 @@ if uploaded_file:
         st.dataframe(df.head())
 
         visualize_column_pair(df)
+                # ⬇️ Add this code after all visualizations are done
+        if os.path.exists("plots.db"):
+            with open("plots.db", "rb") as f:
+                st.download_button(
+                label="📥 Download Plots Database",
+                data=f,
+                file_name="plots.db",
+                mime="application/octet-stream"
+        )
