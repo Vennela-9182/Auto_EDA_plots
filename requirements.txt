@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+matplotlib
+seaborn
+plotly.express
+sqllite3
+tempfile
+os
+openpyxl
